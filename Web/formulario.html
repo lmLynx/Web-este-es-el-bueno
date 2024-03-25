@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formato de Solicitud</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #d57b9e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header img {
+      max-width: 100px;
+    }
+    h1, h2, h3 {
+      margin: 5px 0;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    table th {
+      background-color: #007bff;
+      color: #fff;
+    }
+    input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: calc(100% - 20px);
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .date-inputs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .date-inputs input[type="text"] {
+      width: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://sociedadtecnologiaydeontologia.files.wordpress.com/2019/01/logotipo_ipn.png?w=1231&h=1319&crop=1" alt="Logo IPN">
+    <h1>INSTITUTO POLITÉCNICO NACIONAL</h1>
+    <h2>SECRETARÍA ACADÉMICA</h2>
+    <h3>COMISIÓN DE SITUACIÓN ESCOLAR</h3>
+  </header>
+
+  <form action="#">
+    <h2>Formato de Solicitud (COSIE-01)</h2>
+    <div class="date-inputs">
+      <p>Ciudad de México a</p>
+      <input type="text" name="ciudad" required>
+      <p>de</p>
+      <input type="text" name="mes" required>
+      <p>de 2024</p>
+    </div>
+    
+    <h3>DATOS PERSONALES DEL SOLICITANTE</h3>
+    <table>
+      <tr>
+        <td>APELLIDOS:</td>
+        <td><input type="text" id="apellidos" name="apellidos" required></td>
+      </tr>
+      <tr>
+        <td>NOMBRE(S):</td>
+        <td><input type="text" id="nombres" name="nombres" required></td>
+      </tr>
+      <tr>
+        <td>No. BOLETA:</td>
+        <td><input type="text" id="boleta" name="boleta" required></td>
+      </tr>
+      <tr>
+        <td>UNIDAD ACADÉMICA:</td>
+        <td><input type="text" id="unidad" name="unidad" required></td>
+      </tr>
+      <tr>
+        <td>PROGRAMA ACADÉMICO:</td>
+        <td><input type="text" id="programa" name="programa" required></td>
+      </tr>
+      <tr>
+        <td>FECHA DE NACIMIENTO:</td>
+        <td><input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required></td>
+      </tr>
+      <tr>
+        <td>ESTADO CIVIL:</td>
+        <td><input type="text" id="estado_civil" name="estado_civil" required></td>
+      </tr>
+      <tr>
+        <td>DOMICILIO PARTICULAR:</td>
+        <td><textarea id="domicilio" name="domicilio" required></textarea></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>1. ADEUDOS DE UNIDADES DE APRENDIZAJE DESFASADAS (Art. 98 RI y 52 RGE):</td>
+        <td><input type="text" id="adeudos" name="adeudos"></td>
+      </tr>
+      <tr>
+        <td>2. NO HABER SOLICITADO REINSCRIPCIÓN EN EL PERIODO ESCOLAR ANTERIOR (Art. 57 RGE):</td>
+        <td><input type="text" id="no_reinscripcion" name="no_reinscripcion"></td>
+      </tr>
+      <tr>
+        <td>3. RECONOCIMIENTO DE CALIFICACIONES ACREDITADAS:</td>
+        <td><input type="text" id="reconocimiento_calificaciones" name="reconocimiento_calificaciones"></td>
+      </tr>
+      <tr>
+        <td>4. AMPLIACIÓN DE TIEMPO PARA LA CONCLUSIÓN DE ESTUDIOS (Art. 49 RGE):</td>
+        <td><input type="text" id="ampliacion_tiempo" name="ampliacion_tiempo"></td>
+      </tr>
+      <tr>
+        <td>5. INCUMPLIMIENTO DE DICTAMEN DE SITUACIÓN ESCOLAR ANTERIOR:</td>
+        <td><input type="text" id="incumplimiento_dictamen" name="incumplimiento_dictamen"></td>
+      </tr>
+      <tr>
+        <td>6. OTRAS (ESPECIFIQUE):</td>
+        <td><input type="text" id="otras_situaciones" name="otras_situaciones"></td>
+      </tr>
+    </table>
+   
+
+<h3>EXPLIQUE DE FORMA CONCRETA SU PETICIÓN:</h3>
+<textarea id="peticion" name="peticion" required></textarea>
+
+<h3>MARQUE CON UNA “X” LA(S) CAUSA(S) QUE ORIGINÓ QUE SE ENCUENTRE EN SU SITUACIÓN ESCOLAR ACTUAL:</h3>
+
+<table>
+  <tr>
+    <td>SALUD</td>
+    <td>ECONÓMICA</td>
+    <td>FAMILIAR</td>
+    <td>LEGAL</td>
+    <td>LABORAL</td>
+    <td>ADMINISTRATIVA</td>
+    <td>OTRAS</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="causa_salud" name="causa_salud"></td>
+    <td><input type="checkbox" id="causa_economica" name="causa_economica"></td>
+    <td><input type="checkbox" id="causa_familiar" name="causa_familiar"></td>
+    <td><input type="checkbox" id="causa_legal" name="causa_legal"></td>
+    <td><input type="checkbox" id="causa_laboral" name="causa_laboral"></td>
+    <td><input type="checkbox" id="causa_administrativa" name="causa_administrativa"></td>
+    <td><input type="text" id="otras_causas" name="otras_causas"></td>
+  </tr>
+</table>
+
+<h3>MARQUE LA DOCUMENTACIÓN QUE ANEXA PARA ANALIZAR SU SITUACIÓN ACADÉMICA:</h3>
+<input type="checkbox" id="documentacion_boleta" name="documentacion_boleta">
+<label for="documentacion_boleta">BOLETA GLOBAL DE CALIFICACIONES CERTIFICADA</label><br>
+<input type="checkbox" id="documentacion_documentos" name="documentacion_documentos">
+<label for="documentacion_documentos">DOCUMENTOS PROBATORIOS</label><br>
+<input type="checkbox" id="documentacion_carta" name="documentacion_carta">
+<label for="documentacion_carta">CARTA DE EXPOSICIÓN DE MOTIVOS</label><br>
+<input type="checkbox" id="documentacion_otros" name="documentacion_otros">
+<label for="documentacion_otros">OTROS</label><br>
+<input type="checkbox" id="documentacion_dictamenes" name="documentacion_dictamenes">
+<label for="documentacion_dictamenes">DICTÁMENES ANTERIORES</label><br>
+<input type="checkbox" id="documentacion_bajas" name="documentacion_bajas">
+<label for="documentacion_bajas">BAJAS ANTERIORES</label><br>
+
+<p>AUTORIZO A RECIBIR LAS COMUNICACIONES RELATIVAS A ESTA SOLICITUD EN EL SIGUIENTE CORREO ELECTRÓNICO: <input type="email" id="correo_comunicaciones" name="correo_comunicaciones" required></p>
+
+<p>Aviso de Privacidad. Los datos contenidos en esta solicitud están en posesión de la Comisión de Situación Escolar del Consejo General Consultivo del Instituto Politécnico Nacional, tendrán el carácter de información confidencial en términos de lo dispuesto por los artículos 18 y 19 de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental; por lo cual, no podrán ser difundidos en forma alguna y deberá evitarse cualquier manejo de los mismos que contravenga lo dispuesto en los artículos 20, 21 y 24 de la citada ley, y en caso de incumplimiento será sancionado conforme a lo establecido en la propia ley y en la normatividad institucional vigente.</p>
+
+<input type="submit" value="Enviar">
+
+
